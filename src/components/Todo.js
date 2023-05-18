@@ -1,7 +1,10 @@
 import { Button } from 'react-bootstrap';
 const Todo =({item, todoList, setTodoList})=>{
     const deleteTodo =()=>{
-        setTodoList(todoList.filter((todo)=>todo.id !== item.id));
+      const todo = todoList.find((todo)=>todo.id === item.id);
+      todo.status = "DONE";
+      todoList.splice(todoList.indexOf(todo), 1);
+        setTodoList([...todoList, todo]);
     }
     return(
         <div>
