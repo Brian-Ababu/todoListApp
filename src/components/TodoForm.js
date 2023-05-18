@@ -14,7 +14,7 @@ const TodoForm =({todo, setTodo, todoList, setTodoList})=>{
 
     const handleSubmit =(event)=>{
       event.preventDefault();
-      setTodoList([...todoList, {name:todo, id:shortid.generate()}]);
+      setTodoList([...todoList, {name:todo, id:shortid.generate(), status: "PENDING"}]);
       console.log(todoList);
       setTodo("");
     }
