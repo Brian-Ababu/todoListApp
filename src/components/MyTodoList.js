@@ -12,7 +12,7 @@ const MyTodoList = ({todoList, setTodoList})=>{
                     item={item}
                     todoList={todoList}
                     setTodoList={setTodoList}/>
-                ) : item.status === "DONE"
+                ) : null
             })}
            </h4>
         </div>
