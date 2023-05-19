@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TodoForm from './components/TodoForm';
 import {useState} from 'react';
 import MyTodoList from './components/MyTodoList';
-import { BrowserRouter as Router, Route, Switch } from  'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 function App() {

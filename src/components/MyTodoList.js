@@ -6,13 +6,13 @@ const MyTodoList = ({todoList, setTodoList})=>{
             <h4> Todo list...</h4>
            <h4>
             {todoList.map((item) => {
-                return item.status === "PENDING" ? (
+                return (
                     <Todo
                     key={item.id}
                     item={item}
                     todoList={todoList}
                     setTodoList={setTodoList}/>
-                ) : null
+                )
             })}
            </h4>
         </div>
