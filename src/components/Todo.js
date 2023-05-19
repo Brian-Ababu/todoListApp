@@ -12,6 +12,10 @@ const Todo = ({ item, todoList, setTodoList }) => {
 
     setTodoList(updatedTodoList);
   };
+    
+  const deleteTodo =()=>{
+        setTodoList(todoList.filter((todo)=>todo.id !== item.id));
+    }  
 
   return (
     <div>
@@ -20,6 +24,7 @@ const Todo = ({ item, todoList, setTodoList }) => {
         <Button onClick={toggleStatus} variant="primary" type="submit">
           {item.status}
         </Button>
+        <Button onClick={deleteTodo} variant='danger' type='submit'>Delete</Button>
       </div>
     </div>
   );
