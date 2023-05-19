@@ -25,7 +25,7 @@ const TodoForm =({todo, setTodo, todoList, setTodoList})=>{
               <Form.Control value={todo} type="text" placeholder="Add Item..." onChange={handleChange}/>
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button variant="success" type="submit">
             add Item
           </Button>
         </Form>
