@@ -20,6 +20,11 @@
   font-size: 30px;
 }
 
+.navbar h5 {
+  color: grey;
+  font-size: small;
+}
+
 .navbar .links {
   margin-left: auto;
 }
